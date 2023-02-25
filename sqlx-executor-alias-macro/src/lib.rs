@@ -70,3 +70,9 @@ mod tests {
         }
     }
 }
+
+/*
+// Cannot be used in Transaction.
+pub trait FooPgExecutorOld: for<'c> sqlx::PgExecutor<'c> {}
+impl<T: for<'c> sqlx::PgExecutor<'c>> FooPgExecutorOld for T {}
+*/
