@@ -1,0 +1,20 @@
+[package]
+name = "sqlx-executor-alias-macro"
+version = "0.1.0"
+authors = ["vkill <vkill.net@gmail.com>"]
+edition = "2021"
+description = "SQLx Executor alias macro"
+license = "Apache-2.0 OR MIT"
+repository = "https://github.com/bk-rs/sqlx-ext"
+homepage = "https://github.com/bk-rs/sqlx-ext"
+documentation = "https://docs.rs/sqlx-executor-alias-macro"
+keywords = []
+categories = []
+readme = "README.md"
+
+[dependencies]
+
+[dev-dependencies]
+sqlx = { version = "0.6", default-features = false, features = ["runtime-tokio-native-tls", "postgres", "sqlite"] }
+
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "time"] }
