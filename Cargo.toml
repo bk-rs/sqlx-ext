@@ -1,4 +1,3 @@
 [workspace]
-members = [
-    "sqlx-executor-alias-macro",
-]
+members = ["sqlx-executor-alias-macro"]
+resolver = "2"
